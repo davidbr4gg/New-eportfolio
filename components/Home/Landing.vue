@@ -129,14 +129,18 @@ export default {
       mesh: null,
       showSubtitle: false,
       showSolar: false,
-      tablet: null
+      tablet: null,
+      window: {
+        width: 0,
+        height: 0
+      }
     };
   },
   methods: {
     calc() {
       const logo = document.querySelectorAll("#logo path");
       for (let i = 0; i < logo.length; ++i) {
-        console.log(`Letter ${i} is ${logo[i].getTotalLength()}`);
+        // console.log(`Letter ${i} is ${logo[i].getTotalLength()}`);
       }
     },
     hoverAstronaut() {
@@ -181,6 +185,10 @@ export default {
       } else {
         astro.setAttribute("class", "left");
       }
+    },
+    handleResize() {
+      this.window.width = window.innerWidth;
+      this.window.height = window.innerHeight;
     }
   },
   computed: {
@@ -201,15 +209,28 @@ export default {
     this.hoverAstronaut();
     // this.init();
     // this.animate();
-    setTimeout(() => {
+    if (this.window.width > 1028) {
+      setTimeout(() => {
+        this.showSubtitle = true;
+      }, 3350);
+      setTimeout(() => {
+        this.$refs.earth.style.transform = "translate(-50%, -80%) scale(1)";
+      }, 4000);
+      setTimeout(() => {
+        this.showSolar = true;
+      }, 5500);
+    } else {
       this.showSubtitle = true;
-    }, 3350);
-    setTimeout(() => {
       this.$refs.earth.style.transform = "translate(-50%, -80%) scale(1)";
-    }, 4000);
-    setTimeout(() => {
       this.showSolar = true;
-    }, 5500);
+    }
+  },
+  created() {
+    window.addEventListener("resize", this.handleResize);
+    this.handleResize();
+  },
+  destroyed() {
+    window.removeEventListener("resize", this.handleResize);
   }
 };
 </script>
