@@ -1,0 +1,49 @@
+<template>
+  <div id="portfolio" style="">
+    <h2>And here's some of my projects.</h2>
+    <div class="flex-wrap wrap-container">
+      <Project :image="WWSI" :title="'WWSI Website'"/>
+      <Project :image="Google" :title="'Google In-Store'"/>
+      <Project :image="RTLS" :title="'RTLS Website'"/>
+    </div>
+  </div>
+</template>
+
+<script>
+import RTLS from '~/assets/img/rtls.png'
+import WWSI from '~/assets/img/wwsi.png'
+import Gains from '~/assets/img/gains.png'
+import Google from '~/assets/img/google-1.png'
+import Project from '~/components/UI/Project.vue'
+export default {
+  data() {
+    return {
+      RTLS,
+      WWSI,
+      Gains,
+      Google
+    }
+  },
+  components: {
+    Project,
+  }
+}
+</script>
+
+<style lang="scss" scoped>
+#portfolio {
+  background-color: #f8f8f8;
+  padding-top: 80px;
+}
+.wrap-container {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 70px;
+}
+h2 {
+  color: #242424;
+  font-weight: 400;
+}
+
+</style>
+
