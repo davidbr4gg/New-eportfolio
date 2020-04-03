@@ -3,11 +3,14 @@
     <div class="content-wrapper">
       <!-- <h2>DAVID BRAGG</h2> -->
       <!-- <div class="container"> -->
-      <div class="row justify-content-center" style="padding:180px 40px 0 40px;max-width:1200px;margin:0 auto;">
+      <div
+        class="row justify-content-center"
+        style="padding:180px 40px 0 40px;max-width:1200px;margin:0 auto;"
+      >
         <div
           class="col-xs-12 col-sm-5 col-sm-offset-1 title-col"
           data-sal="slide-up"
-          data-sal-delay="300"
+          data-sal-delay="100"
           data-sal-duration="1000"
           data-sal-easing="ease"
         >
@@ -16,7 +19,7 @@
         <div
           class="col-xs-12 col-sm-5 description"
           data-sal="slide-up"
-          data-sal-delay="300"
+          data-sal-delay="100"
           data-sal-duration="1000"
           data-sal-easing="ease"
         >
@@ -32,10 +35,10 @@
 
 <script>
 import sal from "sal.js";
-import Cloud from '~/components/UI/CloudParallax.vue'
+import Cloud from "~/components/UI/CloudParallax.vue";
 export default {
   mounted() {
-    sal({once: true});
+    sal({ once: true });
   },
   components: {
     Cloud
@@ -67,16 +70,21 @@ export default {
   }
 }
 #about:after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 170px;
-    content: '';
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .82) 50%, white 100%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 170px;
+  content: "";
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.82) 50%,
+    white 100%
+  );
 }
 .description {
-  padding-top:10px;
+  padding-top: 10px;
 }
 .content-wrapper {
   width: 100%;

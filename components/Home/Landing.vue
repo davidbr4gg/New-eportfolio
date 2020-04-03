@@ -8,23 +8,21 @@
     <div v-if="showSolar" id="moon" class="moon-orbit">
       <div class="moon"></div>
     </div>
-      <div id="earth" ref="earth" class="planet">
-        <div class="surface"></div>
-        <div class="sunlight"></div>
-      </div>
+    <div id="earth" ref="earth" class="planet">
+      <div class="surface"></div>
+      <div class="sunlight"></div>
+    </div>
 
     <!-- STARS BACKGROUND -->
     <div class="background-wrapper" style="z-index:1">
       <div class="stars" style="z-index"></div>
       <div class="twinkling"></div>
-      <!-- <div id="stars"></div>
-      <div id="stars2"></div>
-      <div id="stars3"></div>-->
     </div>
 
     <!-- CONTENT -->
     <div class="row" id="contentContainer" ref="contentContainer" style="z-index:10">
       <div id="title">
+        <div class="top sub-title" style="dispay: none;">DAVID BRAGG</div>
         <svg
           id="logo"
           width="1011"
@@ -118,7 +116,6 @@
 </template>
 
 <script>
-import * as THREE from "three";
 export default {
   data() {
     return {
@@ -131,7 +128,8 @@ export default {
       renderer: null,
       mesh: null,
       showSubtitle: false,
-      showSolar: false
+      showSolar: false,
+      tablet: null
     };
   },
   methods: {
@@ -207,7 +205,7 @@ export default {
       this.showSubtitle = true;
     }, 3350);
     setTimeout(() => {
-      this.$refs.earth.style.transform = 'translate(-50%, -80%) scale(1)';
+      this.$refs.earth.style.transform = "translate(-50%, -80%) scale(1)";
     }, 4000);
     setTimeout(() => {
       this.showSolar = true;
@@ -217,11 +215,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.top.sub-title {
+  display: none !important;
+  font-size: 80px;
+  line-height: 80px;
+  text-align: center;
+}
 .moon {
   min-height: 44px;
   min-width: 44px;
   transition: all 2s ease;
-	
 }
 #earth {
   width: 470px;
@@ -253,11 +256,13 @@ canvas {
 }
 .sub-title {
   font-size: 50px;
-  padding-left: 14px;
+  line-height: 80px;
   font-weight: 500;
   letter-spacing: 15px;
   padding-top: 15px;
+  text-align: center;
   font-family: "Orbitron", Times New Roman, Times, serif;
+  max-width: 100vw;
 }
 .name {
   font-size: 85px;
@@ -434,6 +439,27 @@ mask {
   }
   to {
     fill: white;
+  }
+}
+@media screen and (max-width: 1028px) {
+  .sub-title {
+    font-size: 22px;
+  }
+  .top.sub-title {
+    font-size: 48px;
+  }
+  svg {
+    display: none;
+  }
+  .top.sub-title {
+    display: block !important;
+  }
+  #astro {
+    width: 100px;
+    height: 150px;
+  }
+  #earth {
+    width: 300px;
   }
 }
 </style>
