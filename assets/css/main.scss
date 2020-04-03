@@ -2,7 +2,10 @@
   font-family: 'Raleway', sans-serif;
 }
 
-html, body {height: 100%; }
+html, body {height: 100% !important;}
+html {
+	overflow: auto;
+}
 
 *,
 *:before,

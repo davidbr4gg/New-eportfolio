@@ -1,12 +1,12 @@
 <template>
   <div id="footer">
     <div class="wrap-container d-flex align-items-center flex-column">
-      <a href="#" class="logo-wrapper">
+      <a class="logo-wrapper" @click="scrollToTop">
         <img src="~/assets/img/logo.svg" alt="David Bragg Logo" />
-        <span class="footer-logo-top-label">
+        <!-- <span class="footer-logo-top-label">
           Top
           <font-awesome-icon icon="arrow-up" />
-        </span>
+        </span>-->
       </a>
       <div class="links">
         <a href="https://github.com/davidbr4gg" target="_blank">GitHub</a>
@@ -25,6 +25,12 @@ export default {
     return {
       year: 2020
     };
+  },
+  methods: {
+    scrollToTop() {
+      // console.log("clicked");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
   },
   mounted() {
     let d = new Date();
