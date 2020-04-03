@@ -261,6 +261,7 @@ p {
   padding: 32px;
   background: white;
   box-shadow: 0px 0px 20px 7px rgba(0, 0, 0, 0.015);
+  border: 1px solid rgba(0, 0, 0, 0.04);
   position: relative;
   text-align: justify;
 }
