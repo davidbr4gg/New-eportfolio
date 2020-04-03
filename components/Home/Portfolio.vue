@@ -1,6 +1,6 @@
 <template>
   <div id="portfolio-wrap" style>
-    <h2>Here's some of my projects.</h2>
+    <h2>Here are some of my projects.</h2>
     <carousel-3d :autoplay="false" :autoplayHoverPause="true" :autoplayTimeout="1500">
       <slide :index="0" class="card middle">
         <vue-flip :active-click="true">
