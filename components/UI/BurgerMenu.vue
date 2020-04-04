@@ -260,4 +260,27 @@ a:hover {
     }
   }
 }
+@media screen and (max-width: 728px) {
+  ul {
+    margin-top: -40px !important;
+    li {
+      font-size: 32px !important;
+    }
+  }
+  .nav-tgl {
+    &:hover .circle {
+      box-shadow: 0 0 2px black, inset 0 0 3px rgba(0, 0, 0, 0.5) !important;
+    }
+  }
+  .menu.active {
+    .circle {
+      box-shadow: 0 0 2px black, inset 0 0 3px rgba(0, 0, 0, 0.5) !important;
+      background-color: rgba(255, 255, 255, 0.5) !important;
+    }
+  }
+  .circle {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    box-shadow: 0 0 2px black, inset 0 0 3px rgba(0, 0, 0, 0.5);
+  }
+}
 </style>
