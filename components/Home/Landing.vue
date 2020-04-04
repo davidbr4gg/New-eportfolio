@@ -276,7 +276,8 @@ canvas {
   right: 20%;
 }
 .sub-title {
-  font-size: 50px;
+  font-size: 47px;
+  padding-left: 12px;
   line-height: 80px;
   font-weight: 500;
   letter-spacing: 15px;
@@ -464,10 +465,16 @@ mask {
 }
 @media screen and (max-width: 1028px) {
   .sub-title {
-    font-size: 22px;
+    font-size: 16px;
+    padding-left: 0px;
+    line-height: 30px;
+    font-weight: 300;
+    padding-top: 30px;
   }
   .top.sub-title {
     font-size: 48px;
+    font-weight: 900;
+    padding-top: 0;
   }
   svg {
     display: none;
@@ -481,6 +488,9 @@ mask {
   }
   #earth {
     width: 300px;
+  }
+  #title {
+    margin-top: 165px;
   }
 }
 </style>

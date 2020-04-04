@@ -86,4 +86,10 @@ img {
 .burger {
   position: relative;
 }
+@media screen and (max-width: 1028px) {
+  header {
+    position: absolute;
+    top: 25px;
+  }
+}
 </style>
