@@ -88,7 +88,7 @@ header {
   position: fixed;
   // top: 45px;
   z-index: 12;
-  transition: top 500ms ease-in-out;
+  transition: top 200ms ease-in-out;
 }
 .nav-wrapper {
   max-width: 1200px;
