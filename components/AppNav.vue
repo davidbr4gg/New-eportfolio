@@ -66,7 +66,7 @@ export default {
       } else if (first > second) {
         //do nothing
         console.log("small scroll");
-      } else {
+      } else if (first < second - 16) {
         //show navbar
         this.top = 30;
         console.log("negative scroll");
