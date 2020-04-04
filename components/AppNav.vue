@@ -1,6 +1,6 @@
 <template>
   <header :style="'top:'+top+'px;'">
-    <div class="nav-wrapper" @click="changeNav">
+    <div class="nav-wrapper">
       <div class="icon" style="cursor:pointer;" @click="totop">
         <div class="view" style="z-index:1;justify-self:flex-start;">
           <div class="plane main">
@@ -47,12 +47,16 @@ export default {
       //   this.top = 30;
       // }, 1300);
     },
-    changeNav() {
-      console.log(1);
-    },
     getChangePos() {}
   },
-  computed: {},
+  computed: {
+    vw() {
+      return Math.max(
+        document.documentElement.clientWidth,
+        window.innerWidth || 0
+      );
+    }
+  },
   mounted() {
     this.distance = document.getElementById("stack").offsetTop;
     window.onscroll = () => {
@@ -61,18 +65,12 @@ export default {
   },
   watch: {
     scrolled(first, second) {
-      console.log(`first ${first}, second ${second}`);
-      if (first > second + 16 && this.active == false) {
-        //hide navbar
-        this.top = -100;
-        console.log("big scroll");
-      } else if (first > second) {
-        //do nothing
-        console.log("small scroll");
-      } else if (first < second - 16) {
-        //show navbar
-        this.top = 30;
-        console.log("negative scroll");
+      if (this.vw < 768) {
+        if (first > second + 16 && this.active == false) {
+          this.top = -100;
+        } else if (first < second - 16) {
+          this.top = 30;
+        }
       }
     }
   }
@@ -91,7 +89,7 @@ header {
   position: fixed;
   // top: 45px;
   z-index: 12;
-  transition: top 200ms ease-in-out;
+  transition: top 500ms ease-in-out;
 }
 .nav-wrapper {
   max-width: 1200px;
