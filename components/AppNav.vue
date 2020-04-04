@@ -43,6 +43,9 @@ export default {
     },
     navigate(payload) {
       this.$emit("clicked", payload);
+      setTimeout(() => {
+        this.top = 30;
+      }, 1300);
     },
     changeNav() {
       console.log(1);
