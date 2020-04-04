@@ -161,4 +161,11 @@ img {
   transition: all 300ms ease;
   filter: brightness(100%);
 }
+@media screen and (max-width: 728px) {
+  span.lang-txt {
+    bottom: -25px;
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 </style>
