@@ -9,8 +9,8 @@
       >
         <div
           class="col-xs-12 col-sm-5 col-sm-offset-1 title-col"
-          data-sal="slide-up"
-          data-sal-delay="100"
+          :data-sal="sal"
+          data-sal-delay="200"
           data-sal-duration="1000"
           data-sal-easing="ease"
         >
@@ -18,8 +18,8 @@
         </div>
         <div
           class="col-xs-12 col-sm-5 description"
-          data-sal="slide-up"
-          data-sal-delay="100"
+          :data-sal="sal"
+          data-sal-delay="200"
           data-sal-duration="1000"
           data-sal-easing="ease"
         >
@@ -37,8 +37,24 @@
 import sal from "sal.js";
 import Cloud from "~/components/UI/CloudParallax.vue";
 export default {
+  data() {
+    return {
+      sal: "slide-up"
+    };
+  },
+  computed: {
+    vw() {
+      return Math.max(
+        document.documentElement.clientWidth,
+        window.innerWidth || 0
+      );
+    }
+  },
   mounted() {
     sal({ once: true });
+    if (this.vw < 728) {
+      this.sal = "fade";
+    }
   },
   components: {
     Cloud

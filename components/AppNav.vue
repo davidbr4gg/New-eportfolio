@@ -1,5 +1,5 @@
 <template>
-  <header :style="'top:'+top+'px;'">
+  <header :style="`transform:${translate}`">
     <div class="nav-wrapper">
       <div class="icon" style="cursor:pointer;" @click="totop">
         <div class="view" style="z-index:1;justify-self:flex-start;">
@@ -28,7 +28,7 @@ export default {
     return {
       distance: null,
       scrolled: 0,
-      top: 30,
+      translate: "translateY(0);",
       active: false
     };
   },
@@ -65,11 +65,11 @@ export default {
   },
   watch: {
     scrolled(first, second) {
-      if (this.vw < 768) {
+      if (this.vw < 1100) {
         if (first > second + 16 && this.active == false) {
-          this.top = -100;
+          this.translate = "translateY(-120%);";
         } else if (first < second - 16) {
-          this.top = 30;
+          this.translate = "translateY(0);";
         }
       }
     }
@@ -85,11 +85,10 @@ export default {
 }
 header {
   width: 100%;
-  padding: 20px 0;
+  padding: 65px 0 0 0;
   position: fixed;
-  // top: 45px;
   z-index: 12;
-  transition: top 500ms ease-in-out;
+  transition: all 500ms ease-out;
 }
 .nav-wrapper {
   max-width: 1200px;
@@ -130,8 +129,8 @@ img {
   // position: relative;
 }
 @media screen and (max-width: 1028px) {
-  // header {
-  //   top: 25px !important;
-  // }
+  header {
+    padding-top: 25px !important;
+  }
 }
 </style>
