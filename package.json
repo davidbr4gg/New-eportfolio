@@ -29,6 +29,7 @@
     "vue-flip": "^0.3.0",
     "vue-kinesis": "^1.0.5",
     "vue-material": "^1.0.0-beta-11",
+    "vue-scrollto": "^2.17.1",
     "vue2-animate": "^2.1.3"
   },
   "devDependencies": {

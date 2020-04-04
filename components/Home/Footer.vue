@@ -1,18 +1,18 @@
 <template>
-  <div id="footer">
+  <div id="footer" style="min-height:240px">
     <div class="wrap-container d-flex align-items-center flex-column">
-      <a class="logo-wrapper" @click="scrollToTop">
+      <a class="logo-wrapper" @click="totop" style="cursor:pointer;">
         <img src="~/assets/img/logo.svg" alt="David Bragg Logo" />
-        <!-- <span class="footer-logo-top-label">
+        <span class="footer-logo-top-label">
           Top
           <font-awesome-icon icon="arrow-up" />
-        </span>-->
+        </span>
       </a>
       <div class="links">
         <a href="https://github.com/davidbr4gg" target="_blank">GitHub</a>
         <a href="https://www.linkedin.com/in/david-bragg-5b23a1176/" target="_blank">LinkedIn</a>
         <a href="mailto:davidbr4gg@outlook.com" target="_blank">Email</a>
-        <a href="/Resume.pdf">Resume</a>
+        <a href="/Resume.pdf" target="_blank">Resume</a>
       </div>
       <div class="copy-right" style="margin-top:5px;">Copyright © {{year}} David Bragg</div>
     </div>
@@ -27,9 +27,10 @@ export default {
     };
   },
   methods: {
-    scrollToTop() {
-      // console.log("clicked");
-      window.scrollTo({ top: 0, behavior: "smooth" });
+    totop() {
+      document
+        .getElementById(`top`)
+        .scrollIntoView(true, { behavior: "smooth" });
     }
   },
   mounted() {
@@ -43,6 +44,7 @@ export default {
 * {
   color: #f3f3f3;
 }
+
 a:hover {
   text-decoration: none;
   color: #f3f3f3 !important;
@@ -116,6 +118,6 @@ img {
   opacity: 0.93;
 }
 .wrap-container {
-  padding: 8% 15px;
+  padding: 8% 0px;
 }
 </style>

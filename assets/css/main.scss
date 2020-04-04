@@ -2,7 +2,9 @@
   font-family: 'Raleway', sans-serif;
 }
 
-html, body {height: 100% !important;}
+html, body {
+  scroll-behavior: smooth;
+}
 html {
 	overflow: auto;
 }
@@ -331,3 +333,8 @@ p, span, a {
  50% {background-position: 600px 0px;}
  100% {background-position: 1200px 0px;}
 } */
+@media screen and (max-width: 1028px) {
+	.moon-orbit {
+		width:150%;
+	}
+}

@@ -1,6 +1,10 @@
 <template>
   <div id="stack">
-    <h2>This is my technology stack.</h2>
+    <div style="position:relative;">
+      <h2>This is my technology stack.</h2>
+      <span id="tech" style="position:absolute;top:-150px;"></span>
+    </div>
+
     <div class="wrap-container">
       <div class="row justify-content-around" style="margin:0;">
         <div class="language flex-center">
@@ -137,8 +141,8 @@ span.lang-txt {
   padding-bottom: 25px;
 }
 #stack {
-  margin-top: 70px;
-  margin-bottom: 120px;
+  padding-top: 70px;
+  padding-bottom: 120px;
   z-index: 9999;
 }
 #express {

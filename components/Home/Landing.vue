@@ -5,6 +5,7 @@
     ref="wrap"
     style="min-height:100vh;overflow:hidden;position:relative;"
   >
+    <span id="top" style="position:absolute;top:0;left:0;"></span>
     <div v-if="showSolar" id="moon" class="moon-orbit">
       <div class="moon"></div>
     </div>
