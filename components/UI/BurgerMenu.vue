@@ -74,7 +74,7 @@ ul {
   pointer-events: none;
   color: white;
   position: relative;
-  margin-top: -50px;
+  margin-top: -50px !important;
   opacity: 0;
   li {
     font-family: "Playfair Display", "Times New Roman", Times, serif !important;
@@ -254,7 +254,6 @@ a:hover {
 }
 @media screen and (max-width: 1028px) {
   ul {
-    margin-top: 0px;
     li {
       font-size: 40px !important;
     }
