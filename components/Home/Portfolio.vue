@@ -53,7 +53,7 @@
                 <a href="https://youtu.be/s1QZxaDlQuQ" target="_blank" class="whiteText">
                   <font-awesome-icon :icon="['fab','youtube']" />
                 </a>
-                <a href="/Award.pdf" target="_blank" class="whiteText">
+                <a href="/award.pdf" target="_blank" class="whiteText">
                   <font-awesome-icon :icon="['fas','award']" />
                 </a>
                 <a
