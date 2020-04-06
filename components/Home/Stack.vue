@@ -65,7 +65,12 @@
           <span class="lang-txt">NuxtJS</span>
         </div>
         <div class="language flex-center">
-          <img src="~/assets/img/react.png" alt id="react" style="padding: 20px 0;" />
+          <img
+            src="~/assets/img/react.png"
+            alt
+            id="react"
+            style="padding: 20px 0;min-width:250px;height:auto;"
+          />
 
           <span class="lang-txt">ReactJS</span>
         </div>
