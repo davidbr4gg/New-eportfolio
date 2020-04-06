@@ -168,9 +168,9 @@
             </ul>
 
             <ul style="list-style-type:none;">
+              <li>• ReactJS</li>
               <li>• NodeJS + Express</li>
               <li>• MongoDB</li>
-              <li>• Jest</li>
               <li>• Git</li>
             </ul>
           </div>

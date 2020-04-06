@@ -65,6 +65,11 @@
           <span class="lang-txt">NuxtJS</span>
         </div>
         <div class="language flex-center">
+          <img src="~/assets/img/react.png" alt id="react" style="padding: 20px 0;" />
+
+          <span class="lang-txt">ReactJS</span>
+        </div>
+        <div class="language flex-center">
           <img
             id="node"
             src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
@@ -77,16 +82,6 @@
           <img src="~/assets/img/express.png" alt id="express" />
 
           <span class="lang-txt">ExpressJS</span>
-        </div>
-        <div class="language flex-center">
-          <img
-            src="~/assets/img/mongodb.svg"
-            alt
-            id="mongodb"
-            style="padding-left:0px;padding-right:0px;width:240px;"
-          />
-
-          <span class="lang-txt">MongoDB</span>
         </div>
       </div>
     </div>

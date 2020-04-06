@@ -300,20 +300,12 @@ canvas {
   }
 }
 .left {
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
   filter: FlipH;
-  -ms-filter: "FlipH";
 }
 .right {
-  -moz-transform: scaleX(1);
-  -o-transform: scaleX(1);
-  -webkit-transform: scaleX(1);
   transform: scaleX(1);
   filter: FlipH;
-  -ms-filter: "FlipH";
 }
 
 .row {
