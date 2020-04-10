@@ -76,7 +76,7 @@ p, span, a {
 	width:100%;
 	color:#fff;
 	font-family: 'Orbitron', sans-serif;
-	background-image:url(http://solarscroller.rhettforbes.com/img/stars.jpg);
+	background-image:url(https://solarscroller.rhettforbes.com/img/stars.jpg);
 	background-repeat: repeat;
 	background-color:#000;
 	overflow:hidden;
@@ -235,7 +235,8 @@ p, span, a {
 /* Planet */
 #earth .surface {
 	/* Texture */
-	background-image:url(http://solarscroller.rhettforbes.com/css/../img/earth.jpg);
+	// background-image:url(http://solarscroller.rhettforbes.com/css/../img/earth.jpg);
+	// background-image:'~/assets/img/earth.jpeg';
 	/* Axis */
 	/* -webkit-transform:rotate(15deg);
 	-moz-transform:rotate(15deg);
@@ -261,7 +262,7 @@ p, span, a {
 	animation-duration:10s;}
 	#moon .moon {
 		width:0.44104876673929%;
-		background-image:url(http://solarscroller.rhettforbes.com/css/../img/moon.jpg);
+		background-image:url('/moon.jpg');
 		left:100%;}
 	#moon.moon-orbit {
 		/* -webkit-transform:rotate(5deg);

@@ -237,6 +237,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+#earth .surface {
+  background-image: url("/earth1.jpg");
+}
 .top.sub-title {
   display: none !important;
   font-size: 80px;
@@ -356,14 +359,14 @@ canvas {
 
 .stars {
   background: #000
-    url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top
+    url(https://www.script-tutorials.com/demos/360/images/stars.png) repeat top
     center;
   z-index: 0;
 }
 
 .twinkling {
   background: transparent
-    url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat
+    url(https://www.script-tutorials.com/demos/360/images/twinkling.png) repeat
     top center;
   z-index: 1;
 
