@@ -233,7 +233,7 @@ a:hover {
     width: 100%;
     opacity: 1;
     transform: rotateX(0deg);
-    transition: transform 500ms ease-in-out;
+    transition: transform 200ms ease-in-out;
   }
 
   .nav-tgl > span {

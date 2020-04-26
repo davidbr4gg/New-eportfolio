@@ -5,6 +5,29 @@
       <slide :index="0" class="card middle">
         <vue-flip :active-click="true">
           <div slot="front">
+            <img src="~/assets/img/chatapp.png" id="fullImg" />
+          </div>
+          <div slot="back" id="back">
+            <div class="whiteText">
+              <h3 style="margin-top:30px;">Chat Application</h3>
+              <div class>
+                <p>This project is created with React and Java. It is a chat application that enables multiple users to communicate with eachother in real time. Although it is still in progress, the link to the website is available below with the code to my repository.</p>
+              </div>
+              <div class="sm">
+                <a href="https://github.com/davidbr4gg/teams-ui" target="_blank" class="whiteText">
+                  <font-awesome-icon :icon="['fab', 'github']" />
+                </a>
+                <a href="https://davidbr4gg.github.io/teams-ui/" target="_blank" class="whiteText">
+                  <font-awesome-icon :icon="['fas','link']" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </vue-flip>
+      </slide>
+      <slide :index="5" class="card middle">
+        <vue-flip :active-click="true">
+          <div slot="front">
             <img src="~/assets/img/gains.png" id="fullImg" />
           </div>
           <div slot="back" id="back">
@@ -152,7 +175,7 @@
         </vue-flip>
       </slide>
 
-      <slide :index="5" id="four">
+      <slide :index="6" id="four">
         <vue-flip :active-click="true">
           <div slot="front">
             <img src="~/assets/img/wwsi.png" id="fullImg" />

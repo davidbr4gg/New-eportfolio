@@ -216,10 +216,10 @@ export default {
       }, 3350);
       setTimeout(() => {
         this.$refs.earth.style.transform = "translate(-50%, -80%) scale(1)";
-      }, 4000);
+      }, 6500);
       setTimeout(() => {
         this.showSolar = true;
-      }, 5500);
+      }, 6500);
     } else {
       this.showSubtitle = true;
       this.$refs.earth.style.transform = "translate(-50%, -80%) scale(1)";
