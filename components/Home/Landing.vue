@@ -358,16 +358,12 @@ canvas {
 }
 
 .stars {
-  background: #000
-    url(https://www.script-tutorials.com/demos/360/images/stars.png) repeat top
-    center;
+  background: #000 url("/stars-min.png") repeat top center;
   z-index: 0;
 }
 
 .twinkling {
-  background: transparent
-    url(https://www.script-tutorials.com/demos/360/images/twinkling.png) repeat
-    top center;
+  background: transparent url("/twinkling-min.png") repeat top center;
   z-index: 1;
 
   -moz-animation: move-twink-back 200s linear infinite;

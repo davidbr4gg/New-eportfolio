@@ -37,11 +37,7 @@
         </div>
 
         <div class="language flex-center">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/277px-Vue.js_Logo_2.svg.png"
-            id="vue"
-            alt
-          />
+          <img src="../../assets/img/vue.png" id="vue" alt />
           <span class="lang-txt">VueJS</span>
         </div>
         <div class="language flex-center">
