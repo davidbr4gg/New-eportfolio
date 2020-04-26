@@ -1,7 +1,12 @@
 <template>
   <div id="portfolio-wrap" style>
     <h2>Here are some of my projects.</h2>
-    <carousel-3d :autoplay="false" :autoplayHoverPause="true" :autoplayTimeout="1500">
+    <carousel-3d
+      ref="carousel"
+      :autoplay="false"
+      :autoplayHoverPause="true"
+      :autoplayTimeout="1500"
+    >
       <slide :index="0" class="card middle">
         <vue-flip :active-click="true">
           <div slot="front">
@@ -25,7 +30,7 @@
           </div>
         </vue-flip>
       </slide>
-      <slide :index="5" class="card middle">
+      <slide :index="4" class="card middle">
         <vue-flip :active-click="true">
           <div slot="front">
             <img src="~/assets/img/gains.png" id="fullImg" />
@@ -57,7 +62,7 @@
         </vue-flip>
       </slide>
 
-      <slide :index="1" class="card middle">
+      <slide :index="5" class="card middle">
         <vue-flip :active-click="true">
           <div slot="front">
             <img src="~/assets/img/ezdonate.png" id="fullImg" />
@@ -145,7 +150,7 @@
         </vue-flip>
       </slide>
 
-      <slide :index="4">
+      <slide :index="1">
         <vue-flip :active-click="true">
           <div slot="front">
             <img src="~/assets/img/rtls.png" id="fullImg" />
@@ -214,6 +219,15 @@ export default {
     Carousel3d,
     Slide,
     "vue-flip": VueFlip
+  },
+  props: ["loaded"],
+  watch: {
+    loaded() {
+      if (this.loaded === true) {
+        document.querySelector(".carousel-3d-container").style.display =
+          "block";
+      }
+    }
   }
 };
 </script>

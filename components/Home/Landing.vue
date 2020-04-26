@@ -118,6 +118,7 @@
 
 <script>
 export default {
+  props: ["loaded"],
   data() {
     return {
       img: "~/image-astronaut.png",
@@ -210,21 +211,21 @@ export default {
     this.hoverAstronaut();
     // this.init();
     // this.animate();
-    if (this.window.width > 1028) {
-      setTimeout(() => {
-        this.showSubtitle = true;
-      }, 3350);
-      setTimeout(() => {
-        this.$refs.earth.style.transform = "translate(-50%, -80%) scale(1)";
-      }, 6500);
-      setTimeout(() => {
-        this.showSolar = true;
-      }, 6500);
-    } else {
-      this.showSubtitle = true;
-      this.$refs.earth.style.transform = "translate(-50%, -80%) scale(1)";
-      this.showSolar = true;
-    }
+    // if (this.window.width > 1028) {
+    //   setTimeout(() => {
+    //     this.showSubtitle = true;
+    //   }, 3350);
+    //   setTimeout(() => {
+    //     this.$refs.earth.style.transform = "translate(-50%, -80%) scale(1)";
+    //   }, 6500);
+    //   setTimeout(() => {
+    //     this.showSolar = true;
+    //   }, 6500);
+    // } else {
+    //   this.showSubtitle = true;
+    //   this.$refs.earth.style.transform = "translate(-50%, -80%) scale(1)";
+    //   this.showSolar = true;
+    // }
   },
   created() {
     window.addEventListener("resize", this.handleResize);
@@ -232,6 +233,29 @@ export default {
   },
   destroyed() {
     window.removeEventListener("resize", this.handleResize);
+  },
+  watch: {
+    loaded() {
+      if (this.loaded === true) {
+        if (this.window.width > 1028) {
+          setTimeout(() => {
+            this.showSubtitle = true;
+          }, 3350);
+          setTimeout(() => {
+            this.$refs.earth.style.transform = "translate(-50%, -80%) scale(1)";
+          }, 6500);
+          setTimeout(() => {
+            this.showSolar = true;
+          }, 6500);
+        } else {
+          this.showSubtitle = true;
+          setTimeout(() => {
+            this.$refs.earth.style.transform = "translate(-50%, -80%) scale(1)";
+            this.showSolar = true;
+          }, 100);
+        }
+      }
+    }
   }
 };
 </script>
