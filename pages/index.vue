@@ -90,7 +90,7 @@ export default {
         document.getElementById("preload").style.display = "none";
         document.getElementById("content").style.display = "block";
         this.loaded = true;
-      }, 10);
+      }, 2000);
     }
   },
   mounted() {

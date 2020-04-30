@@ -15,10 +15,10 @@ export default {
     //   { src: 'https://webglfundamentals.org/webgl/lessons/resources/three.min.js' }
     // ],
     link: [
-      { rel: "stylesheet", href: "https://unpkg.com/aos@next/dist/aos.css" },
       { rel: 'icon', type: 'image/x-icon', href: '/logoblack.png' },
       { href: "https://fonts.googleapis.com/css?family=Raleway&display=swap", rel: "stylesheet" },
-      { href: "https://fonts.googleapis.com/css?family=Orbitron&display=swap", rel: "stylesheet" }
+      { href: "https://fonts.googleapis.com/css?family=Orbitron&display=swap", rel: "stylesheet" },
+      { rel: "stylesheet", href: "https://unpkg.com/aos@next/dist/aos.css" },
     ]
   },
   router: {
@@ -68,7 +68,7 @@ export default {
   */
   plugins: [
     '~/plugins/vue-kinesis',
-    '~/plugins/aos.js'
+    { src: '~/plugins/aos.js', mode: 'client' }
   ],
 
 
