@@ -1,13 +1,13 @@
 <template>
   <div id="stack">
-    <div style="position:relative;" data-aos="fade-up">
+    <div style="position:relative;">
       <h2>This is my technology stack.</h2>
       <span id="tech" style="position:absolute;top:-150px;"></span>
     </div>
 
     <div class="wrap-container">
       <div class="row justify-content-around" style="margin:0;">
-        <div class="language flex-center" data-aos="fade-up">
+        <div class="language flex-center">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
             alt
@@ -15,7 +15,7 @@
           />
           <span class="lang-txt">HTML</span>
         </div>
-        <div class="language flex-center" data-aos="fade-up">
+        <div class="language flex-center">
           <img src="~/assets/img/css.svg" id="css" alt />
           <!-- <svg id="css" xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 32 32">
             <path
@@ -25,7 +25,7 @@
           </svg>-->
           <span class="lang-txt">CSS</span>
         </div>
-        <div class="language flex-center" style="margin-top:15px;" data-aos="fade-up">
+        <div class="language flex-center" style="margin-top:15px;">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="165" height="165">
             <path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185h-125.184z" />
             <path
@@ -36,11 +36,11 @@
           <span class="lang-txt">JavaScript</span>
         </div>
 
-        <div class="language flex-center" data-aos="fade-up">
+        <div class="language flex-center">
           <img src="../../assets/img/vue.png" id="vue" alt />
           <span class="lang-txt">VueJS</span>
         </div>
-        <div class="language flex-center" data-aos="fade-up">
+        <div class="language flex-center">
           <svg
             id="nuxt"
             width="185px"
@@ -60,7 +60,7 @@
 
           <span class="lang-txt">NuxtJS</span>
         </div>
-        <div class="language flex-center" data-aos="fade-up">
+        <div class="language flex-center">
           <img
             src="~/assets/img/react.png"
             alt
@@ -70,7 +70,7 @@
 
           <span class="lang-txt">ReactJS</span>
         </div>
-        <div class="language flex-center" data-aos="fade-up">
+        <div class="language flex-center">
           <img
             id="node"
             src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
@@ -79,7 +79,7 @@
 
           <span class="lang-txt">NodeJS</span>
         </div>
-        <div class="language flex-center" data-aos="fade-up">
+        <div class="language flex-center">
           <img src="~/assets/img/express.png" alt id="express" />
 
           <span class="lang-txt">ExpressJS</span>

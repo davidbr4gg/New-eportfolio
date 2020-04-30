@@ -59,6 +59,7 @@ import Portfolio from "~/components/Home/Portfolio.vue";
 import Stack from "~/components/Home/Stack.vue";
 import Contact from "~/components/Home/Contact.vue";
 import AppFooter from "~/components/Home/Footer.vue";
+import AOS from "aos";
 
 export default {
   components: {
@@ -86,6 +87,8 @@ export default {
       el.scrollIntoView(true, { behavior: "smooth" });
     },
     pageloaded() {
+      AOS.init();
+      AOS.refresh();
       setTimeout(() => {
         document.getElementById("preload").style.display = "none";
         document.getElementById("content").style.display = "block";

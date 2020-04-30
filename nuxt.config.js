@@ -11,14 +11,14 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
-    // script: [
-    //   { src: 'https://webglfundamentals.org/webgl/lessons/resources/three.min.js' }
-    // ],
+    script: [
+      // { src: 'https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js' }
+    ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/logoblack.png' },
       { href: "https://fonts.googleapis.com/css?family=Raleway&display=swap", rel: "stylesheet" },
       { href: "https://fonts.googleapis.com/css?family=Orbitron&display=swap", rel: "stylesheet" },
-      { rel: "stylesheet", href: "https://unpkg.com/aos@next/dist/aos.css" },
+      { rel: "stylesheet", href: "https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css" },
     ]
   },
   router: {

@@ -8,20 +8,9 @@
         style="padding:180px 40px 0 40px;max-width:1200px;margin:0 auto;"
       >
         <div class="col-xs-12 col-sm-5 col-sm-offset-1 title-col">
-          <h2
-            :data-aos="aosLeft"
-            data-aos-offset="0"
-            data-aos-duration="1500"
-            data-aos-once="false"
-          >I'm a highly motivated software engineer with a strong passion for website development.</h2>
+          <h2>I'm a highly motivated software engineer with a strong passion for website development.</h2>
         </div>
-        <div
-          class="col-xs-12 col-sm-5 description"
-          :data-aos="aosRight"
-          data-aos-offset="0"
-          data-aos-duration="1500"
-          data-aos-once="false"
-        >
+        <div class="col-xs-12 col-sm-5 description">
           <p>Currently employed as a front-end developer for BOOStudio, I design and develop dynamic and responsive user interfaces for multiple Fortune 500 companies with large and complex systems.</p>
           <p>Continuously working towards improving my knowledge and skills to develop technologies that contribute to the betterment of society.</p>
         </div>

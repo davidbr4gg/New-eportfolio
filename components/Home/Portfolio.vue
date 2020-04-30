@@ -1,12 +1,11 @@
 <template>
   <div id="portfolio-wrap" style>
-    <h2 data-aos="fade-up">Here are some of my projects.</h2>
+    <h2>Here are some of my projects.</h2>
     <carousel-3d
       ref="carousel"
       :autoplay="false"
       :autoplayHoverPause="true"
       :autoplayTimeout="1500"
-      data-aos="fade-up"
     >
       <slide :index="6" class="card middle">
         <vue-flip :active-click="true">
