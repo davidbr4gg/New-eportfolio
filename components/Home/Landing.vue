@@ -236,24 +236,22 @@ export default {
   },
   watch: {
     loaded() {
-      if (this.loaded === true) {
-        if (this.window.width > 1028) {
-          setTimeout(() => {
-            this.showSubtitle = true;
-          }, 3350);
-          setTimeout(() => {
-            this.$refs.earth.style.transform = "translate(-50%, -80%) scale(1)";
-          }, 6500);
-          setTimeout(() => {
-            this.showSolar = true;
-          }, 6500);
-        } else {
+      if (this.loaded === true && this.window.width > 1028) {
+        setTimeout(() => {
           this.showSubtitle = true;
-          setTimeout(() => {
-            this.$refs.earth.style.transform = "translate(-50%, -80%) scale(1)";
-            this.showSolar = true;
-          }, 100);
-        }
+        }, 3350);
+        setTimeout(() => {
+          this.$refs.earth.style.transform = "translate(-50%, -80%) scale(1)";
+        }, 6500);
+        setTimeout(() => {
+          this.showSolar = true;
+        }, 6500);
+      } else {
+        this.showSubtitle = true;
+        setTimeout(() => {
+          this.$refs.earth.style.transform = "translate(-50%, -80%) scale(1)";
+          this.showSolar = true;
+        }, 500);
       }
     }
   }
@@ -282,7 +280,7 @@ export default {
   position: absolute;
   top: 80%;
   left: 50%;
-  transition: all 1s ease;
+  transition: all 500ms ease-in-out;
   transform: translate(-50%, -80%) scale(0);
 }
 

@@ -31,7 +31,7 @@
         </ul>
       </div>
     </div>
-    <div id="app-content">
+    <div id="content">
       <AppNav @clicked="navigate" />
       <Landing :loaded="loaded" />
       <div id="app-about">
@@ -88,9 +88,9 @@ export default {
     pageloaded() {
       setTimeout(() => {
         document.getElementById("preload").style.display = "none";
-        document.getElementById("app-content").style.display = "block";
+        document.getElementById("content").style.display = "block";
         this.loaded = true;
-      }, 2000);
+      }, 10);
     }
   },
   mounted() {
@@ -100,7 +100,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#app-content {
+#content {
   display: none;
 }
 #preload {
@@ -111,7 +111,6 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 10000;
 }
 $white: #f5f5f5;
 $lightgrey: #dadada;
@@ -297,11 +296,11 @@ body {
     left: 4px;
     top: -3px;
   }
-  // &:first-child {
-  //   top: -30px;
-  //   left: -210px;
-  //   animation: twinkle 0.4s infinite;
-  // }
+  &:first-child {
+    top: -30px;
+    left: -210px;
+    animation: twinkle 0.4s infinite;
+  }
   &:nth-child(2) {
     top: 0;
     left: 60px;

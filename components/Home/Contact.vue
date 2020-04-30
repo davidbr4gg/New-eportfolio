@@ -1,7 +1,7 @@
 <template>
   <div id="contact">
-    <h2 id="heading">Let's get in touch!</h2>
-    <div class="container">
+    <h2 id="heading" data-aos="fade-up">Let's get in touch!</h2>
+    <div class="container" data-aos="fade-up">
       <section>
         <div>
           <div>
@@ -14,7 +14,7 @@
           <div class="links">
             <div class="link-item">
               <font-awesome-icon icon="download" />
-              <a href="/Resume.pdf" target="_blank">Download PDF</a>
+              <a href="/Resume.pdf" target="_blank">Download Resume</a>
             </div>
             <div class="link-item">
               <font-awesome-icon icon="envelope" />
@@ -31,7 +31,7 @@
         </div>
       </section>
 
-      <section class="bot">
+      <section class="bot" data-aos="fade">
         <div class="section-title">Education</div>
         <div>
           <div class="job education">
@@ -42,6 +42,11 @@
                   Bachelor of Engineering (Honours), Software Engineering Major
                   <br />Diploma in Professional Engineering Practice
                 </div>
+                <ul style="margin-top:25px;">
+                  <li>• Dean's List 2020</li>
+                  <li>• Distinction average</li>
+                  <li>• 100% in Software Engineering Studio</li>
+                </ul>
               </div>
               <div>2018 - 2021</div>
             </div>
@@ -51,9 +56,9 @@
       </section>
 
       <section class="bot">
-        <div class="section-title">Experience</div>
+        <div class="section-title" data-aos="fade">Experience</div>
         <div>
-          <div class="job">
+          <div class="job" data-aos="fade">
             <div class="job-title-container">
               <div>
                 <div class="job-company">BOOStudio</div>
@@ -69,7 +74,7 @@
             </ul>
           </div>
 
-          <div class="job">
+          <div class="job" data-aos="fade">
             <div class="job-title-container">
               <div>
                 <div class="job-company">Wired and Wireless Solutions International</div>
@@ -86,7 +91,7 @@
           </div>
           <!-- end job -->
 
-          <div class="job">
+          <div class="job" data-aos="fade">
             <div class="job-title-container">
               <div>
                 <div class="job-company">Code Camp</div>
@@ -104,7 +109,7 @@
 
           <!-- end job -->
 
-          <div class="job">
+          <div class="job" data-aos="fade">
             <div class="job-title-container">
               <div>
                 <div class="job-company">Woolworths, Eastlakes</div>
@@ -120,7 +125,7 @@
             </ul>
           </div>
 
-          <div class="job">
+          <div class="job" data-aos="fade">
             <div class="job-title-container">
               <div>
                 <div class="job-company">Private Tutor</div>
@@ -136,7 +141,7 @@
             </ul>
           </div>
 
-          <div class="job lastbot">
+          <div class="job lastbot" data-aos="fade">
             <div class="job-title-container">
               <div>
                 <div class="job-company">Soccer Referee</div>
@@ -156,7 +161,7 @@
         </div>
       </section>
 
-      <section class="bot">
+      <section class="bot" data-aos="fade">
         <div class="section-title">Technical Skills</div>
         <div>
           <div class="skills-container">
@@ -178,7 +183,7 @@
         </div>
       </section>
 
-      <section class="bot">
+      <section class="bot" data-aos="fade">
         <div class="section-title">Transferrable Skills</div>
         <div>
           <div class="skills-container">
@@ -200,7 +205,7 @@
         </div>
       </section>
 
-      <section class="bot">
+      <section class="bot" data-aos="fade">
         <div class="section-title">References</div>
 
         <div class="reference">Available upon request.</div>

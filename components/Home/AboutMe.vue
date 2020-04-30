@@ -8,17 +8,20 @@
         style="padding:180px 40px 0 40px;max-width:1200px;margin:0 auto;"
       >
         <div class="col-xs-12 col-sm-5 col-sm-offset-1 title-col">
-          <!-- :data-sal="sal"
-          data-sal-delay="200"
-          data-sal-duration="1000"
-          data-sal-easing="ease"-->
-          <h2>I'm a highly motivated software engineer with a strong passion for website development.</h2>
+          <h2
+            data-aos="fade-right"
+            data-aos-offset="0"
+            data-aos-duration="1500"
+            data-aos-once="false"
+          >I'm a highly motivated software engineer with a strong passion for website development.</h2>
         </div>
-        <div class="col-xs-12 col-sm-5 description">
-          <!-- :data-sal="sal"
-          data-sal-delay="200"
-          data-sal-duration="1000"
-          data-sal-easing="ease"-->
+        <div
+          class="col-xs-12 col-sm-5 description"
+          data-aos="fade-left"
+          data-aos-offset="0"
+          data-aos-duration="1500"
+          data-aos-once="false"
+        >
           <p>Currently employed as a front-end developer for BOOStudio, I design and develop dynamic and responsive user interfaces for multiple Fortune 500 companies with large and complex systems.</p>
           <p>Continuously working towards improving my knowledge and skills to develop technologies that contribute to the betterment of society.</p>
         </div>
@@ -30,7 +33,6 @@
 </template>
 
 <script>
-import sal from "sal.js";
 import Cloud from "~/components/UI/CloudParallax.vue";
 export default {
   data() {
@@ -47,7 +49,6 @@ export default {
     }
   },
   mounted() {
-    sal({ once: true });
     if (this.vw < 728) {
       this.sal = "fade";
     }
@@ -59,7 +60,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "~/node_modules/sal.js/dist/sal.css";
 #about {
   // min-height: 100vh;
   background: linear-gradient(to bottom, #000 0%, #3e99d1 92%, #fff 100%);

@@ -15,10 +15,10 @@ export default {
     //   { src: 'https://webglfundamentals.org/webgl/lessons/resources/three.min.js' }
     // ],
     link: [
+      { rel: "stylesheet", href: "https://unpkg.com/aos@next/dist/aos.css" },
       { rel: 'icon', type: 'image/x-icon', href: '/logoblack.png' },
       { href: "https://fonts.googleapis.com/css?family=Raleway&display=swap", rel: "stylesheet" },
       { href: "https://fonts.googleapis.com/css?family=Orbitron&display=swap", rel: "stylesheet" }
-
     ]
   },
   router: {
@@ -67,7 +67,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/vue-kinesis'
+    '~/plugins/vue-kinesis',
+    '~/plugins/aos.js'
   ],
 
 

@@ -1,16 +1,17 @@
 <template>
   <div id="portfolio-wrap" style>
-    <h2>Here are some of my projects.</h2>
+    <h2 data-aos="fade-up">Here are some of my projects.</h2>
     <carousel-3d
       ref="carousel"
       :autoplay="false"
       :autoplayHoverPause="true"
       :autoplayTimeout="1500"
+      data-aos="fade-up"
     >
-      <slide :index="0" class="card middle">
+      <slide :index="6" class="card middle">
         <vue-flip :active-click="true">
           <div slot="front">
-            <img src="~/assets/img/chatapp.png" id="fullImg" />
+            <img loading="lazy" src="~/assets/img/chatapp.png" id="fullImg" />
           </div>
           <div slot="back" id="back">
             <div class="whiteText">
@@ -30,18 +31,18 @@
           </div>
         </vue-flip>
       </slide>
-      <slide :index="4" class="card middle">
+      <slide :index="1" class="card middle">
         <vue-flip :active-click="true">
           <div slot="front">
-            <img src="~/assets/img/gains.png" id="fullImg" />
+            <img loading="lazy" src="~/assets/img/newinstore.png" id="fullImg" />
           </div>
           <div slot="back" id="back">
             <div class="whiteText">
-              <h3 class>Gains Calculator</h3>
+              <h3 class>Google</h3>
               <div class>
-                <p>Side project created with VueJS in order to calculate various different fitness related variables (e.g. Bodyfat% and Maintenance Calorie levels). A link of the website is provided below, along with the GitHub link to the code where you can see how I devised these formulas!</p>
+                <p>Sole designer and front-end developer of a project in progress for Google. This is a very large and complex system, requiring multiple HTTP requests that display real-time data and highly efficient algorithms effectively minimising loading times and the overall efficiency of the website (required as it will be a very high traffic website).</p>
               </div>
-              <div class="sm">
+              <!-- <div class="sm">
                 <a
                   href="https://github.com/davidbr4gg/gainscalculator"
                   target="_blank"
@@ -56,40 +57,26 @@
                 >
                   <font-awesome-icon :icon="['fas','link']" />
                 </a>
-              </div>
+              </div>-->
             </div>
           </div>
         </vue-flip>
       </slide>
 
-      <slide :index="5" class="card middle">
+      <slide :index="0" class="card middle">
         <vue-flip :active-click="true">
           <div slot="front">
-            <img src="~/assets/img/ezdonate.png" id="fullImg" />
+            <img loading="lazy" src="~/assets/img/instore.png" id="fullImg" />
           </div>
           <div slot="back" id="back">
             <div class="whiteText">
-              <h3 style="margin-bottom:2px;">ezyDonate</h3>
+              <h3 style="margin-bottom:2px;">Google In-Store</h3>
               <div class>
-                <p>
-                  University project consisting of an Android application designed to remotely connect charity communities with donors.
-                  I had received a perfect score for this subject, while also winning an award!
-                  <i>(link below)</i> Please also see attached the YouTube link showcasing the application!
-                </p>
+                <p>A reporting system designed for Google stores to easily manage Google products. This system enables a staff member to lodge an issue for a product, allowing vendors to be aware of the issue and install replacement products. The link to the website is provided below.</p>
               </div>
               <div class="sm">
-                <a href="https://youtu.be/s1QZxaDlQuQ" target="_blank" class="whiteText">
-                  <font-awesome-icon :icon="['fab','youtube']" />
-                </a>
-                <a href="/award.pdf" target="_blank" class="whiteText">
-                  <font-awesome-icon :icon="['fas','award']" />
-                </a>
-                <a
-                  href="https://github.com/davidbr4gg/ezyDonate-1"
-                  target="_blank"
-                  class="whiteText"
-                >
-                  <font-awesome-icon :icon="['fab', 'github']" />
+                <a href="https://www.googleinstore.com.au/" target="_blank" class="whiteText">
+                  <font-awesome-icon :icon="['fas','link']" />
                 </a>
               </div>
             </div>
@@ -97,10 +84,10 @@
         </vue-flip>
       </slide>
 
-      <slide :index="2" class="card middle">
+      <slide :index="3" class="card middle">
         <vue-flip :active-click="true">
           <div slot="front">
-            <img src="~/assets/img/fastcomps.png" id="fullImg" />
+            <img loading="lazy" src="~/assets/img/fastcomps.png" id="fullImg" />
           </div>
           <div slot="back" id="back">
             <div class="whiteText">
@@ -118,30 +105,19 @@
         </vue-flip>
       </slide>
 
-      <slide :index="3">
+      <slide :index="2">
         <vue-flip :active-click="true">
           <div slot="front">
-            <img src="~/assets/img/eportfolio.png" id="fullImg" />
+            <img loading="lazy" src="~/assets/img/iti.png" id="fullImg" />
           </div>
           <div slot="back" id="back">
             <div class="whiteText">
-              <h3 style="margin-top:30px;">Previous E-Portfolio</h3>
+              <h3 style="margin-top:25px;">ITI World</h3>
               <div class>
-                <p>Written with HTML CSS and JavaScript(VueJS), my previous E-Portfolio was designed and developed by me in order to showcase my achievements and passion for software development. It is clear to see I have come a long way in just a few months!</p>
+                <p>The ITI website was initially built off an old and inefficient system. I am currently reworking the entire website with best SEO practises in VueJS. This new system will be a mix of an e-commerce and online-learning platform, targetting clients unable to attend on-premise training camps.</p>
               </div>
               <div class="sm">
-                <a
-                  href="https://github.com/davidbr4gg/VueJS-E-Portfolio"
-                  target="_blank"
-                  class="whiteText"
-                >
-                  <font-awesome-icon :icon="['fab', 'github']" />
-                </a>
-                <a
-                  href="http://davidbr4gg-vuejs.s3-website-ap-southeast-2.amazonaws.com/"
-                  target="_blank"
-                  class="whiteText"
-                >
+                <a href="https://www.itiworld.com.au/" target="_blank" class="whiteText">
                   <font-awesome-icon :icon="['fas','link']" />
                 </a>
               </div>
@@ -150,10 +126,10 @@
         </vue-flip>
       </slide>
 
-      <slide :index="1">
+      <slide :index="5">
         <vue-flip :active-click="true">
           <div slot="front">
-            <img src="~/assets/img/rtls.png" id="fullImg" />
+            <img loading="lazy" src="~/assets/img/rtls.png" id="fullImg" />
           </div>
           <div slot="back" id="back">
             <div class="whiteText">
@@ -180,10 +156,10 @@
         </vue-flip>
       </slide>
 
-      <slide :index="6" id="four">
+      <slide :index="4" id="four">
         <vue-flip :active-click="true">
           <div slot="front">
-            <img src="~/assets/img/wwsi.png" id="fullImg" />
+            <img loading="lazy" src="~/assets/img/wwsi.png" id="fullImg" />
           </div>
           <div slot="back" id="back">
             <div class="whiteText">
@@ -224,6 +200,7 @@ export default {
   watch: {
     loaded() {
       if (this.loaded === true) {
+        console.log("loaded");
         document.querySelector(".carousel-3d-container").style.display =
           "block";
       }
