@@ -93,7 +93,7 @@
             <div class="whiteText">
               <h3 class>FastComps</h3>
               <div class>
-                <p>An E-Commerce website built with VueJS and Firebase. This project enabled to further my understanding of full-stack development through practising HTTP requests and mutations through the Vuex store, along with website authentication controlled through an admin panel.</p>
+                <p>An E-Commerce website built with VueJS and Firebase. This project required full-stack development with HTTP requests and mutations through the Vuex store, along with website authentication controlled through an admin panel.</p>
               </div>
               <div class="sm">
                 <a href="https://github.com/davidbr4gg/fastcomps" target="_blank" class="whiteText">

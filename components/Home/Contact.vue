@@ -205,7 +205,7 @@
         </div>
       </section>
 
-      <section class="bot" data-aos="fade">
+      <section class="bot aos-animate" data-aos="fade">
         <div class="section-title">References</div>
 
         <div class="reference">Available upon request.</div>

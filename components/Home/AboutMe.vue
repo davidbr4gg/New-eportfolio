@@ -9,7 +9,7 @@
       >
         <div class="col-xs-12 col-sm-5 col-sm-offset-1 title-col">
           <h2
-            data-aos="fade-right"
+            :data-aos="aosLeft"
             data-aos-offset="0"
             data-aos-duration="1500"
             data-aos-once="false"
@@ -17,7 +17,7 @@
         </div>
         <div
           class="col-xs-12 col-sm-5 description"
-          data-aos="fade-left"
+          :data-aos="aosRight"
           data-aos-offset="0"
           data-aos-duration="1500"
           data-aos-once="false"
@@ -37,7 +37,8 @@ import Cloud from "~/components/UI/CloudParallax.vue";
 export default {
   data() {
     return {
-      sal: "slide-up"
+      aosLeft: "fade-right",
+      aosRight: "fade-left"
     };
   },
   computed: {
@@ -50,7 +51,8 @@ export default {
   },
   mounted() {
     if (this.vw < 728) {
-      this.sal = "fade";
+      this.aosLeft = "fade";
+      this.aosRight = "fade";
     }
   },
   components: {
