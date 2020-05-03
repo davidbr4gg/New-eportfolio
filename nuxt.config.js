@@ -17,8 +17,8 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/logoblack.png' },
       { href: "https://fonts.googleapis.com/css?family=Raleway&display=swap", rel: "stylesheet" },
+      // { href: "https://unpkg.com/vue2-animate/dist/vue2-animate.min.css", rel: "stylesheet" },
       { href: "https://fonts.googleapis.com/css?family=Orbitron&display=swap", rel: "stylesheet" },
-      { rel: "stylesheet", href: "https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css" },
     ]
   },
   router: {
@@ -68,7 +68,7 @@ export default {
   */
   plugins: [
     '~/plugins/vue-kinesis',
-    { src: '~/plugins/aos.js', mode: 'client' }
+    '~/plugins/anim',
   ],
 
 

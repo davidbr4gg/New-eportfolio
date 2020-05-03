@@ -8,15 +8,18 @@
         style="padding:180px 40px 0 40px;max-width:1200px;margin:0 auto;"
       >
         <div class="col-xs-12 col-sm-5 col-sm-offset-1 title-col">
-          <h2>I'm a highly motivated software engineer with a strong passion for website development.</h2>
+          <Anim>
+            <h2>I'm a highly motivated software engineer with a strong passion for website development.</h2>
+          </Anim>
         </div>
         <div class="col-xs-12 col-sm-5 description">
-          <p>Currently employed as a front-end developer for BOOStudio, I design and develop dynamic and responsive user interfaces for multiple Fortune 500 companies with large and complex systems.</p>
-          <p>Continuously working towards improving my knowledge and skills to develop technologies that contribute to the betterment of society.</p>
+          <Anim>
+            <p>Currently employed as a front-end developer for BOOStudio, I design and develop dynamic and responsive user interfaces for multiple Fortune 500 companies with large and complex systems.</p>
+            <p>Continuously working towards improving my knowledge and skills to develop technologies that contribute to the betterment of society.</p>
+          </Anim>
         </div>
       </div>
       <Cloud />
-      <!-- <img src="~/assets/img/me.jpeg" alt /> -->
     </div>
   </div>
 </template>
@@ -25,10 +28,7 @@
 import Cloud from "~/components/UI/CloudParallax.vue";
 export default {
   data() {
-    return {
-      aosLeft: "fade-right",
-      aosRight: "fade-left"
-    };
+    return {};
   },
   computed: {
     vw() {
@@ -40,8 +40,6 @@ export default {
   },
   mounted() {
     if (this.vw < 728) {
-      this.aosLeft = "fade";
-      this.aosRight = "fade";
     }
   },
   components: {

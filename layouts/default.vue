@@ -4,6 +4,9 @@
   </div>
 </template>
 
+<script>
+</script>
+
 <style>
 *,
 *:before,
