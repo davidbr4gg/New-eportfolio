@@ -25,7 +25,7 @@
     "parallax-js": "^3.1.0",
     "sal.js": "^0.7.3",
     "scroll-out": "^2.2.8",
-    "three": "^0.113.2",
+    "three": "^0.125.0",
     "vue-carousel-3d": "^0.2.0",
     "vue-flip": "^0.3.0",
     "vue-kinesis": "^1.0.5",
